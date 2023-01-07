@@ -15,50 +15,50 @@ Compiling and Running Go Code
 
 To compile and run Go code, follow these steps:
 
-    Install Go on your machine by following the instructions at https://golang.org/doc/install.
+Install Go on your machine by following the instructions at https://golang.org/doc/install.
 
-    Create a new directory for your Go code and open a terminal in that directory.
+Create a new directory for your Go code and open a terminal in that directory.
 
-    Create a go.mod file that defines the module name and the dependencies for your Go code. The go.mod file should look something like this:
+Create a go.mod file that defines the module name and the dependencies for your Go code. The go.mod file should look something like this:
 
-''' module [module name]
+``` module [module name]
 
 go 1.16
 
 require (
     [dependency] v1.2.3
 )
-'''
+```
 
 Replace "[module name]" with the name of your module and "[dependency]" with the import path of any dependencies your code uses.
 
     Write your Go code in a file with a .go extension. For example, you could create a file called "hello.go" with the following code:
 
-    ''' package main
+    ``` package main
 
 import "fmt"
 
 func main() {
     fmt.Println("Hello, world!")
 }
-'''
+```
 
     To compile the code, run the following command in the terminal:
 
-    ''' go build
-'''
+    ``` go build
+```
 
 This will create an executable file in the same directory as your Go code. The name of the file will be the same as the name of the directory that contains your Go code.
 
     To run the compiled code, enter the following command in the terminal:
 
-''' ./[executable file]
- '''
+``` ./[executable file]
+ ```
 
  Replace "[executable file]" with the name of the file that was created when you ran the go build command. For example, if your Go code is in a directory called "hello", the executable file will be named "hello", so you would run the following command:
 
- ''' ./hello
-'''
+ ``` ./hello
+```
 
 This will execute the Go code and you should see the output "Hello, world!" printed to the terminal.
 
