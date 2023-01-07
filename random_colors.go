@@ -93,10 +93,10 @@ func getpanels() {
 		greenStr := strconv.Itoa(green)
 		blueStr := strconv.Itoa(blue)
 
-		fmt.Println(panelIDStr)
-		fmt.Println(redStr)
-		fmt.Println(greenStr)
-		fmt.Println(blueStr)
+		fmt.Println("panelId: " + panelIDStr)
+		fmt.Println("red: " + redStr)
+		fmt.Println("green: " + greenStr)
+		fmt.Println("blue: " + blueStr)
 		makeHTTPCall("http://192.168.x.x:16021/api/v1/AUTHTOKEN/effects", "PUT", `{"write":{"animData":"1 `+panelIDStr+` 1 `+redStr+` `+greenStr+` `+blueStr+` 0 1","animType":"static","command":"display","loop":false,"palette":[],"version":"1.0"}}`)
 	}
 
