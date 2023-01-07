@@ -1,4 +1,4 @@
-# nanoleaf_custom
+# random_colors
 
 This code is making an HTTP GET request to the URL "http://192.168.X.X:16021/api/v1/AUTHTOKEN/panelLayout/layout", and then unmarshalling the response body into a struct of type "Response". The "Response" struct has three fields: NumPanels, SideLength, and PositionData. The "PositionData" field is a slice of "PositionData" structs.
 
@@ -11,7 +11,7 @@ The function "makeHTTPCall" is used to make the HTTP request with the specified 
 
 
 
-Compiling and Running Go Code
+# Compiling and Running Go Code
 
 To compile and run Go code, follow these steps:
 
